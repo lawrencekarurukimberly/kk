@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+.bookmark-enter {
+  animation: fadeIn 0.3s ease-out forwards;
+}
