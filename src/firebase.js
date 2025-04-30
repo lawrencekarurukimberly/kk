@@ -1,3 +1,4 @@
+// src/firebase.js
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth'; // Import Firebase Authentication
