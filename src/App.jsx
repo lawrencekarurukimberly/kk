@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import BookmarkForm from './components/BookmarkForm';
 import BookmarkList from './components/BookmarkList';
 import SignUpPage from './pages/SignUpPage';
-import SignInPage from './pages/LoginPage'; // Added import statement
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; // Import BrowserRouter, Routes, Route, and Link
+import SignInPage from './pages/LoginPage';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; 
 import useBookmarkStore from './store/useBookmarkStore';
 import { auth } from './firebase';
 

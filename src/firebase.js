@@ -1,9 +1,9 @@
 // src/firebase.js
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection } from 'firebase/firestore';
-import { getAuth } from 'firebase/auth'; // Import Firebase Authentication
+import { getAuth } from 'firebase/auth'; 
 
-// Your Firebase configuration
+
 const firebaseConfig = {
   apiKey: "AIzaSyBxncX6q4IpZs5uiqkkk02iMgr5hNB-brc",
   authDomain: "vault-566ae.firebaseapp.com",
@@ -14,13 +14,12 @@ const firebaseConfig = {
   measurementId: "G-Y6RZDFQ6B8"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const auth = getAuth(app); // Initialize Firebase Authentication
+const auth = getAuth(app);
 
-// Export Firestore collection and auth
 export const bookmarksCollection = collection(db, 'bookmarks');
-export { auth }; // Export auth
+export { auth };
 
-export default db; // Export the db instance if needed elsewhere (optional)
+export default db;
